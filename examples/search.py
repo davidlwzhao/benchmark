@@ -24,6 +24,12 @@ def search3(arr, target):
     return target in arr
 
 
-test_arr = ascii_letters*944 + '3' + ascii_letters*56
-test_target = '3'
-search_inputs = (test_arr, test_target)
+# character test
+test_arr1 = ascii_letters*9944 + '3' + ascii_letters*56
+test_target1 = '3'
+search_inputs = (test_arr1, test_target1)
+
+# word test
+test_arr2 = list(test_arr1)
+test_target2 = test_arr1
+search_inputs2 = (test_arr2, test_target2)

@@ -1,6 +1,8 @@
 import time
 import pprint
 from collections import defaultdict
+import graphs
+import logging
 
 
 class Benchmark:
@@ -45,6 +47,8 @@ class Benchmark:
     def _display(times):
         # for time series will attempt to save time via interpolation
         # have option for FULL range
+        # parsing data
+        #graphs.benchmark_plot(times)
         pprint.pprint(times)
 
 
